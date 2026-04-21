@@ -35,17 +35,24 @@
       border-radius: 16px;
       padding: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      width: 100%;
+      overflow: hidden;
+    }
+
+    iframe, object, embed {
+      width: 100% !important;
+      max-width: 100%;
+      border: none;
+      display: block;
+    }
+
+    object {
+      height: auto;
     }
 
     .flourish-embed {
       width: 100%;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.85rem;
-      color: #cf7332;
-      text-align: center;
+      min-height: 400px;
     }
   </style>
 </head>
@@ -83,7 +90,16 @@
     <h1>¿Cuál es la versión más escuchada?</h1>
 
     <div class="chart-card">
-      <iframe title="Comparación de Reproducción de Taylor's Version" aria-label="Gráfico de rangos" id="datawrapper-chart-rm1EV" src="https://datawrapper.dwcdn.net/rm1EV/1/" scrolling="no" frameborder="0" style="border: none;" width="918" height="205" data-external="1"></iframe
+      <iframe
+        title="Comparación de Reproducción de Taylor's Version"
+        aria-label="Gráfico de rangos"
+        id="datawrapper-chart-rm1EV"
+        src="https://datawrapper.dwcdn.net/rm1EV/1/"
+        scrolling="no"
+        frameborder="0"
+        style="width:100%; min-height:250px; border:none;"
+        data-external="1">
+      </iframe>  
     </div>
       
   </div>
